@@ -1,0 +1,24 @@
+{
+	"name": "react-app-with-hooks-and-context",
+	"version": "1.0.0",
+	"description": "A simple React app using hooks and context",
+	"main": "src/App.js",
+	"scripts": {
+		"format": "prettier --write \"src/**/*.{js,jsx}\"",
+		"lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jrapala/react-app-with-hooks-and-context.git"
+	},
+	"author": "Juliette Rapala",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/jrapala/react-app-with-hooks-and-context/issues"
+	},
+	"homepage": "https://github.com/jrapala/react-app-with-hooks-and-context#readme",
+	"devDependencies": {
+		"prettier": "^1.18.2"
+	}
+}
