@@ -4,6 +4,7 @@
 	"description": "A simple React app using hooks and context",
 	"main": "src/App.js",
 	"scripts": {
+		"dev": "parcel src/index.html",
 		"format": "prettier --write \"src/**/*.{js,jsx}\"",
 		"lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
 		"test": "echo \"Error: no test specified\" && exit 1"
@@ -21,6 +22,7 @@
 	"devDependencies": {
 		"eslint": "^6.0.1",
 		"eslint-config-prettier": "^6.0.0",
+		"parcel-bundler": "^1.12.3",
 		"prettier": "^1.18.2"
 	}
 }
