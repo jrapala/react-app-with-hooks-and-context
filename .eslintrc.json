@@ -1,6 +1,13 @@
 {
-	"extends": ["eslint:recommended", "prettier", "prettier/react"],
-	"plugins": [],
+	"extends": [
+		"eslint:recommended", // gospel rules
+		"plugin:import/errors",
+		"plugin:react/recommended", // contains some questionable rules
+		"plugin:jsx-a11y/recommended",
+		"prettier", // turns off some rules
+		"prettier/react" // turns off some rules
+	],
+	"plugins": ["react", "import", "jsx-a11y"],
 	"parserOptions": {
 		"ecmaVersion": 2018,
 		"sourceType": "module",
@@ -14,6 +21,14 @@
 		"node": true
 	},
 	"rules": {
-		"react/jsx-filename-extension": [0]
+		"react/jsx-filename-extension": [0],
+		"react/prop-types": 0, // We'll be using TypeScript eventually
+		"no-console": 1
+	},
+	// You must specify which version of React you're using
+	"settings": {
+		"react": {
+			"version": "detect" // Detects version from package.json
+		}
 	}
 }
