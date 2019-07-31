@@ -13,11 +13,12 @@ const SearchParams = () => {
 		setBreeds([])
 		setBreed('')
 
-		pet.breeds(animal).then(({ breeds }) => {
-			const breedStrings = breeds.map(({ name }) => name)
+		// Fetch from API
+		pet.breeds(animal).then(({ breeds: apiBreeds }) => {
+			const breedStrings = apiBreeds.map(({ name }) => name)
 			setBreeds(breedStrings)
-		}, console.error)
-	}, [animal, setBreed, setBreeds]) // only run useEffect when animal updates, add setBreed and setBreeds since ESLint depends it (it's technically correct)
+		}, console.error) // eslint-disable-line no-console
+	}, [animal, setBreed, setBreeds]) // only run useEffect when animal updates, add setBreed and setBreeds since ESLint demands it (it's technically correct)
 
 	return (
 		<div className="search-params">
