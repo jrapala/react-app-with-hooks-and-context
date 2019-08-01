@@ -21,6 +21,10 @@
 	},
 	"homepage": "https://github.com/jrapala/react-app-with-hooks-and-context#readme",
 	"devDependencies": {
+		"@babel/core": "^7.5.5",
+		"@babel/plugin-proposal-class-properties": "^7.5.5",
+		"@babel/preset-env": "^7.5.5",
+		"@babel/preset-react": "^7.0.0",
 		"babel-eslint": "^10.0.2",
 		"cross-env": "^5.2.0",
 		"eslint": "^6.1.0",
